@@ -46,7 +46,7 @@ def main():
                 total += int(db[fruit][cart[fruit] % len(db[fruit])]*100)
                 if fruitNr % 5 == 0:
                     total -= 200
-            print total
+            print max(0,total)
 
 if __name__ == '__main__':
     main()
