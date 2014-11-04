@@ -25,11 +25,15 @@ def main():
     cart = dict();
 
     total = 0
+    fruitNr = 0
+
     while True:
         fruit = input_fruit()
 
         if fruit is None:
             break
+
+        fruitNr += 1
 
         if fruit not in db and fruit in synonyms:
             fruit = synonyms[fruit]
@@ -40,6 +44,8 @@ def main():
 
         if fruit in db:
             total += int(db[fruit][cart[fruit] % len(db[fruit])]*100)
+            if fruitNr % 5 == 0:
+                total -= 200
         print total
 
 if __name__ == '__main__':
