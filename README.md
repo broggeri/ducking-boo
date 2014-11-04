@@ -56,7 +56,7 @@ STORY 6
 
 STORY 7
 -------
-- ADDING NEW DISCOUNT RULES TO PREVIOUS ONES
+- ADDING NEW DISCOUNT RULES TO PREVIOUS ONES (only on the language specified)
   - 2 mele = 1€ (price)
   - 4 apples: -1€ (discount)
   - 5 fruits (whatever which ones): -2€ (discount)
