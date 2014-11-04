@@ -14,7 +14,7 @@ import json
 
 def input_fruit():
     try:
-        return raw_input()
+        return raw_input().replace(' ','').split(',')
     except EOFError, e:
         return None
 
@@ -28,25 +28,25 @@ def main():
     fruitNr = 0
 
     while True:
-        fruit = input_fruit()
+        for fruit in input_fruit():
 
-        if fruit is None:
-            break
+            if fruit is None:
+                break
 
-        fruitNr += 1
+            fruitNr += 1
 
-        if fruit not in db and fruit in synonyms:
-            fruit = synonyms[fruit]
-        if fruit in cart:
-            cart[fruit] += 1
-        else:
-            cart[fruit] = 0
+            if fruit not in db and fruit in synonyms:
+                fruit = synonyms[fruit]
+            if fruit in cart:
+                cart[fruit] += 1
+            else:
+                cart[fruit] = 0
 
-        if fruit in db:
-            total += int(db[fruit][cart[fruit] % len(db[fruit])]*100)
-            if fruitNr % 5 == 0:
-                total -= 200
-        print total
+            if fruit in db:
+                total += int(db[fruit][cart[fruit] % len(db[fruit])]*100)
+                if fruitNr % 5 == 0:
+                    total -= 200
+            print total
 
 if __name__ == '__main__':
     main()
