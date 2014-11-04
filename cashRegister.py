@@ -13,7 +13,7 @@
 import json
 
 def input_fruit():
-	return [raw_input()]
+	return [fruit.strip() for fruit in raw_input().split(',')]
 
 def main():
     db = json.load(open('database.json'))
@@ -23,7 +23,7 @@ def main():
 		for fruit in input_fruit():
 			if fruit in db:
 				total += db[fruit]*100
-        print total
+		print total
 
 if __name__ == '__main__':
     main()
