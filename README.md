@@ -47,4 +47,14 @@ STORY 5
 
 3RD SESSION
 ============
+STORY 6
+-------
+- different local discounts
+  - 3 pommes = 2€ (price)
+  - 2 mele = 1.5 € (price)
 
+
+STORY 7
+-------
+- ADDING NEW DISCOUNT RULES TO PREVIOUS ONES
+  - 
