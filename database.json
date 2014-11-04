@@ -1,5 +1,7 @@
 {
     "apples": [1],
+    "pommes": [1, 1, 0],
+    "mele": [1, 0.5],
     "bananas": [1.5, 0],
     "cherries": [0.75, 0.55]
 }

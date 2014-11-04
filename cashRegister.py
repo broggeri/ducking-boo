@@ -13,7 +13,10 @@
 import json
 
 def input_fruit():
-    return raw_input()
+    try:
+        return raw_input()
+    except EOFError, e:
+        return None
 
 def main():
     db = json.load(open('database.json'))
@@ -24,7 +27,11 @@ def main():
     total = 0
     while True:
         fruit = input_fruit()
-        if fruit in synonyms:
+
+        if fruit is None:
+            break
+
+        if fruit not in db and fruit in synonyms:
             fruit = synonyms[fruit]
         if fruit in cart:
             cart[fruit] += 1
@@ -32,7 +39,7 @@ def main():
             cart[fruit] = 0
 
         if fruit in db:
-            total += db[fruit][cart[fruit] % len(db[fruit])]*100
+            total += int(db[fruit][cart[fruit] % len(db[fruit])]*100)
         print total
 
 if __name__ == '__main__':
