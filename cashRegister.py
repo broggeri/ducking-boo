@@ -22,7 +22,7 @@ def main():
     while True:
         for fruit in input_fruit():
             if fruit in db:
-                total += db[fruit]*100
+                total += db[fruit][0]*100
         print total
 
 if __name__ == '__main__':
