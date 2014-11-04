@@ -18,11 +18,18 @@ def input_fruit():
 def main():
     db = json.load(open('database.json'))
 
+    cart = dict();
+
     total = 0
     while True:
         fruit = input_fruit()
+        if fruit in cart:
+            cart[fruit] += 1
+        else:
+            cart[fruit] = 0
+
         if fruit in db:
-            total += db[fruit][0]*100
+            total += db[fruit][cart[fruit] % len(db[fruit])]*100
         print total
 
 if __name__ == '__main__':
