@@ -30,10 +30,19 @@ if you allow CSV formats each line starts over (example: apples, apples ==> 200 
 STORY 4
 -------
 - Erase story 2: every two cherries, we save 30 cents instead of 20 cents
-- - no CSV supported
-- - bannas: every 2 bananas, 1 discount (2nd is free)
+- Erase story 3: no CSV supported
+- bananas: every 2 bananas, 1 discount (2nd is free)
 - each line doesn't start over
-- 
+
+
+STORY 5
+-------
+- two cherries --> 20 cents discounts (ONLY if all story 4 is done, otherwise, stay on story 4 expectations on cherries)
+- internationalization: support several words for the same product
+example: 
+pommes = apples
+mele = apples
+
 
 - 
 
