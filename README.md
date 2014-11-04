@@ -63,3 +63,5 @@ STORY 7
   - Do CSV, no restart when creating a new line
   - (!) discounts are applied IN ADDITION to previous ones (examples: 2 cherries + 2 bananas + 1 apple = 75 + 75 -20 +150 (+150 - 150) -200
   - prices are > 0
+
+>> ENDS AT 5.35pm
