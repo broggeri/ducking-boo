@@ -1,5 +1,5 @@
 {
-	'bananes' : 'bananas',
-	'pommes' : 'apples',
-	'cerises' : 'cherries'
+    "bananes" : "bananas",
+    "pommes" : "apples",
+    "cerises" : "cherries"
 }
