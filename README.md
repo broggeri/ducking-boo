@@ -1,3 +1,4 @@
+Step 1
 you will have databases such as "apples - 1€" (description, price)
 you will get inputs such as "apples"
 if you do find it in your database, you have to print the total cents of cumulated products
@@ -11,4 +12,11 @@ your database is for now:
 - bananaas - 1.5€
 - cherries 0.75€
 accept only one word per line
-(!) every two cherries you save 20 cents
+
+Step 2
+every two cherries you save 20 cents
+
+
+Step 3
+if you allow CSV formats each line starts over (example: apples, apples ==> 200
+NEW LINE: apples, bananas ==> 250)
