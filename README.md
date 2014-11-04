@@ -39,9 +39,7 @@ STORY 5
 -------
 - two cherries --> 20 cents discounts (ONLY if all story 4 is done, otherwise, stay on story 4 expectations on cherries)
 - internationalization: support several words for the same product
-- example: 
- -pommes = apples
- -mele = apples
+- example: (pommes = apples; mele = apples)
 
 ==> ENDS AT 4.35pm
 
