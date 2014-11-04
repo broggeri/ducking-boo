@@ -1,5 +1,5 @@
 {
-    "apples": [1],
+    "apples": [1, 1, 1, 0],
     "pommes": [1, 1, 0],
     "mele": [1, 0],
     "bananas": [1.5, 0],
