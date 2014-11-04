@@ -17,12 +17,15 @@ def input_fruit():
 
 def main():
     db = json.load(open('database.json'))
+    synonyms = json.load(open('synonyms.json'))
 
     cart = dict();
 
     total = 0
     while True:
         fruit = input_fruit()
+        if fruit in synonyms:
+            fruit = synonyms[fruit]
         if fruit in cart:
             cart[fruit] += 1
         else:
