@@ -57,4 +57,9 @@ STORY 6
 STORY 7
 -------
 - ADDING NEW DISCOUNT RULES TO PREVIOUS ONES
-  - 
+  - 2 mele = 1€ (price)
+  - 4 apples: -1€ (discount)
+  - 5 fruits (whatever which ones): -2€ (discount)
+  - Do CSV, no restart when creating a new line
+  - (!) discounts are applied IN ADDITION to previous ones (examples: 2 cherries + 2 bananas + 1 apple = 75 + 75 -30 +150 (+150 - 150) -200
+  - prices are > 0
