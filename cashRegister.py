@@ -12,13 +12,16 @@
 
 import json
 
+def input_fruit():
+	return raw_input()
+
 def main():
     db = json.load(open('database.json'))
 
 
     total = 0
     while True:
-        fruit = raw_input()
+        fruit = input_fruit()
         if fruit in db:
             total += db[fruit]*100
         print total
