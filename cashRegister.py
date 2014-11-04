@@ -13,7 +13,10 @@
 import json
 
 def input_fruit():
-    return raw_input()
+    try:
+        return raw_input()
+    except EOFError, e:
+        return None
 
 def main():
     db = json.load(open('database.json'))
@@ -24,6 +27,10 @@ def main():
     total = 0
     while True:
         fruit = input_fruit()
+
+        if fruit is None:
+            break
+
         if fruit in synonyms:
             fruit = synonyms[fruit]
         if fruit in cart:
