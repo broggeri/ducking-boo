@@ -1,5 +1,8 @@
 {
     "bananes" : "bananas",
     "pommes" : "apples",
-    "cerises" : "cherries"
+    "cerises" : "cherries",
+    "platanos": "bananas",
+    "manzanas" : "apples",
+    "cerezas" : "cherries"
 }
