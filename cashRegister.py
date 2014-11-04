@@ -18,7 +18,7 @@ def main():
 
     total = 0
     while True:
-        fruit = input()
+        fruit = raw_input()
         if fruit in db:
             total += db[fruit]*100
         print total
